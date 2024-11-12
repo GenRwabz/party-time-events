@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Time Events</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Party Time Events!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Party Time Events is not just an event planning company; we're your partners in creating magical moments and unforgettable experiences. With our creative flair and attention to detail, we turn your dreams into reality!</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Themed Events</h3>
+            <p>Step into a world of wonder with our themed events. From mystical masquerades to retro roller discos, we'll transport your guests to a whole new dimension of fun!</p>
+        </div>
+        <div class="service">
+            <h3>Bespoke Catering</h3>
+            <p>Indulge in culinary delights with our bespoke catering service. From elegant canapés to mouth-watering desserts, we'll tantalize your taste buds and leave you craving for more!</p>
+        </div>
+        <div class="service">
+            <h3>Entertainment & Music</h3>
+            <p>Get ready to dance the night away with our top-notch entertainment and music. From live bands to DJ sets that ignite the dance floor, we'll keep the party vibes going strong!</p>
+        </div>
+    </section>
+
+    <section id="packages">
+        <h2>Explore Our Packages</h2>
+        <div class="package-links">
+            <a href="bronze.html" class="package bronze">Bronze</a>
+            <a href="silver.html" class="package silver">Silver</a>
+            <a href="gold.html" class="package gold">Gold</a>
+        </div>
+    </section>
+
+    <section id="contact-form">
+        <form action="thank-you.html" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Party Time Events</p>
+    </footer>
+
+</body>
+</html>
