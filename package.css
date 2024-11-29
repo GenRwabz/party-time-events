@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #ff4b2b, #ff416c);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffd700;
+}
+
+/* Service Detail Section */
+.service-detail {
+    text-align: center;
+    padding: 50px;
+    background: white;
+    margin: 20px auto;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-detail h1 {
+    color: #ff4b2b;
+    margin-bottom: 20px;
+}
+
+.service-detail p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.service-detail ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-detail ul li {
+    font-size: 16px;
+    background: #fce4ec;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.service-detail strong {
+    color: #ff416c;
+}
+
+.cta-button {
+    background: #ff4b2b;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background: #ff416c;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .service-detail {
+        padding: 30px;
+        margin: 10px;
+    }
+
+    header nav a {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+/* Burger Menu Styles */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger-menu div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Navbar */
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffd700;
+}
+
+/* Responsive Design for Burger Menu */
+@media screen and (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background: #ff4b2b;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+/* Remove underline from logo link */
+.logo a {
+    text-decoration: none;
+    color: white; /* Adjust color to match your design */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Optional: Add hover effect */
+.logo a:hover {
+    color: #ffd700; /* Highlight color on hover */
+}
